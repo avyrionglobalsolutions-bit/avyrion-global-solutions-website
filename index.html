@@ -4,23 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AVYRION Global Solutions | Study Abroad Consultancy in Hyderabad</title>
+<title>AVYRION Global Solutions | Study Abroad Consultants in Hyderabad</title>
 
-<meta name="description" content="AVYRION Global Solutions is a study abroad consultancy in Hyderabad providing personalised guidance for students planning to study in the UK, Canada, USA, Australia, UAE, Malta and Spain.">
+<meta name="description" content="AVYRION Global Solutions is an international education and study abroad consultancy in Hyderabad offering university admissions, visa guidance, education loan assistance, documentation and pre-departure support.">
 
-<meta name="keywords" content="AVYRION Global Solutions, AVYRION, study abroad consultancy Hyderabad, study abroad consultant Hyderabad, study in UK, study in Canada, study in USA, study in Australia, study in UAE, study in Malta, study in Spain">
+<meta name="keywords" content="AVYRION Global Solutions, study abroad consultants Hyderabad, overseas education consultants Hyderabad, study in UK, study in USA, study in Canada, study in Australia, study in UAE, study in Malta, study in Spain">
 
 <meta name="author" content="AVYRION Global Solutions">
+<meta name="robots" content="index, follow">
 
 <style>
+
 :root{
-  --navy:#0b1736;
-  --blue:#155eef;
-  --light:#f5f8ff;
-  --text:#172033;
-  --muted:#647084;
-  --white:#ffffff;
-  --border:#e2e8f0;
+  --navy:#08152f;
+  --navy2:#102b5c;
+  --blue:#1769ff;
+  --blue2:#4f8cff;
+  --gold:#e8ad3d;
+  --text:#172238;
+  --muted:#66738a;
+  --white:#fff;
+  --light:#f6f8fc;
+  --border:#e3e8f1;
+  --shadow:0 18px 55px rgba(8,30,70,.11);
 }
 
 *{
@@ -45,60 +51,96 @@ a{
   color:inherit;
 }
 
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
+
 .container{
-  width:min(1120px,92%);
+  width:min(1180px,92%);
   margin:auto;
 }
 
 /* TOP BAR */
+
 .topbar{
   background:var(--navy);
-  color:#dce7ff;
-  padding:9px 0;
-  font-size:13px;
+  color:#dce7fa;
+  font-size:12px;
 }
 
 .topbar .container{
-  display:flex;
-  justify-content:space-between;
-}
-
-/* HEADER */
-header{
-  background:#fff;
-  border-bottom:1px solid var(--border);
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-
-.nav{
-  min-height:90px;
+  min-height:38px;
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 
+.topbar a{
+  color:#fff;
+  font-weight:800;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
 .logo{
-  font-size:23px;
-  font-weight:900;
-  color:var(--navy);
+  font-size:24px;
+  font-weight:950;
+  letter-spacing:-.7px;
+  color:var(--blue);
 }
 
 .logo span{
-  color:var(--blue);
+  color:var(--navy);
+  font-weight:800;
+}
+
+.logo em{
+  display:block;
+  font-style:normal;
+  font-size:8px;
+  letter-spacing:3px;
+  color:#7a879a;
+  text-align:right;
+  margin-top:-3px;
 }
 
 nav{
   display:flex;
-  gap:25px;
   align-items:center;
-  font-size:14px;
-  font-weight:700;
+  gap:22px;
+  font-size:13px;
+  font-weight:800;
 }
 
 nav a:hover{
   color:var(--blue);
+}
+
+.nav-cta{
+  padding:11px 17px;
+  border-radius:9px;
+  background:var(--navy);
+  color:#fff!important;
 }
 
 .menu{
@@ -106,69 +148,59 @@ nav a:hover{
   border:0;
   background:none;
   font-size:28px;
-}
-
-/* BUTTONS */
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:13px 20px;
-  border-radius:10px;
-  font-weight:800;
-  border:1px solid transparent;
-}
-
-.btn-primary{
-  background:var(--blue);
-  color:#fff;
-}
-
-.btn-outline{
-  border-color:#cdd7e8;
-  color:var(--navy);
-  background:#fff;
+  cursor:pointer;
 }
 
 /* HERO */
+
 .hero{
-  background:linear-gradient(135deg,#f7faff,#edf4ff);
-  padding:80px 0;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 15%,#dce9ff 0,transparent 30%),
+    linear-gradient(135deg,#f9fbff,#edf4ff);
+  padding:82px 0 90px;
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:50px;
+  grid-template-columns:1.08fr .92fr;
+  gap:55px;
   align-items:center;
 }
 
-.eyebrow{
-  display:inline-block;
-  background:#e4eeff;
-  color:#174aa5;
-  padding:7px 13px;
+.badge{
+  display:inline-flex;
+  background:#e5efff;
+  color:#1350ad;
+  padding:8px 14px;
   border-radius:999px;
-  font-weight:800;
-  font-size:13px;
-  margin-bottom:18px;
-}
-
-h1{
-  font-size:clamp(40px,5vw,65px);
-  line-height:1.08;
-  color:var(--navy);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.8px;
   margin-bottom:20px;
 }
 
-h1 span{
+h1{
+  font-size:clamp(42px,5.3vw,70px);
+  line-height:1.02;
+  letter-spacing:-2.4px;
+  color:var(--navy);
+  margin-bottom:22px;
+}
+
+h1 .blue{
   color:var(--blue);
 }
 
-.hero p{
+h1 .gold{
+  color:var(--gold);
+}
+
+.hero-copy{
   font-size:18px;
-  color:#59667b;
-  max-width:650px;
+  color:#5c6980;
+  max-width:690px;
   margin-bottom:28px;
 }
 
@@ -178,71 +210,154 @@ h1 span{
   flex-wrap:wrap;
 }
 
-.trust{
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:13px 20px;
+  border-radius:10px;
+  font-weight:900;
+  border:1px solid transparent;
+  cursor:pointer;
+}
+
+.btn-primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:#0755dc;
+}
+
+.btn-light{
+  background:#fff;
+  border-color:#d4ddea;
+  color:var(--navy);
+}
+
+.quick{
   display:flex;
-  gap:20px;
+  gap:18px;
   flex-wrap:wrap;
   margin-top:25px;
-  color:#566277;
-  font-size:13px;
+  font-size:12px;
+  color:#526078;
+  font-weight:800;
 }
 
 .hero-card{
   background:#fff;
+  padding:17px;
   border:1px solid var(--border);
-  border-radius:22px;
-  padding:25px;
-  box-shadow:0 20px 50px rgba(23,60,125,.10);
+  border-radius:25px;
+  box-shadow:var(--shadow);
 }
 
-.globe{
-  height:320px;
-  border-radius:18px;
-  background:linear-gradient(145deg,#0b1736,#183b83);
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.world{
+  height:370px;
+  border-radius:19px;
+  background:linear-gradient(145deg,#07152f,#174a95);
   position:relative;
+  display:grid;
+  place-items:center;
   overflow:hidden;
 }
 
-.globe-circle{
-  width:210px;
-  height:210px;
-  border:2px solid rgba(255,255,255,.35);
+.globe{
+  width:225px;
+  height:225px;
+  border:2px solid rgba(255,255,255,.38);
+  border-radius:50%;
+  position:relative;
+}
+
+.globe:before,
+.globe:after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(255,255,255,.23);
   border-radius:50%;
 }
 
-.dest-mini{
+.globe:before{
+  inset:18px 54px;
+}
+
+.globe:after{
+  inset:54px 18px;
+}
+
+.country{
   position:absolute;
   background:#fff;
   color:var(--navy);
   padding:9px 13px;
-  border-radius:9px;
+  border-radius:10px;
   font-size:12px;
-  font-weight:800;
+  font-weight:900;
+  box-shadow:0 8px 22px rgba(0,0,0,.16);
 }
 
-.d1{top:25px;left:20px;}
-.d2{top:65px;right:20px;}
-.d3{bottom:35px;left:30px;}
-.d4{bottom:25px;right:30px;}
+.c1{
+  top:23px;
+  left:18px;
+}
+
+.c2{
+  top:72px;
+  right:18px;
+}
+
+.c3{
+  bottom:92px;
+  left:18px;
+}
+
+.c4{
+  bottom:23px;
+  right:20px;
+}
+
+.hero-label{
+  position:absolute;
+  bottom:17px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:800;
+  white-space:nowrap;
+}
 
 /* SECTIONS */
+
 section{
-  padding:75px 0;
+  padding:78px 0;
 }
 
 .section-head{
   text-align:center;
-  max-width:720px;
-  margin:0 auto 40px;
+  max-width:780px;
+  margin:0 auto 42px;
+}
+
+.kicker{
+  color:var(--blue);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.8px;
+  margin-bottom:10px;
 }
 
 .section-head h2{
-  font-size:36px;
-  line-height:1.2;
+  font-size:38px;
+  line-height:1.15;
   color:var(--navy);
+  letter-spacing:-.8px;
   margin-bottom:12px;
 }
 
@@ -251,6 +366,7 @@ section{
 }
 
 /* SERVICES */
+
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -258,27 +374,34 @@ section{
 }
 
 .card{
-  border:1px solid var(--border);
-  border-radius:17px;
-  padding:25px;
   background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:27px;
+  box-shadow:0 6px 25px rgba(8,30,70,.04);
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
 }
 
 .icon{
-  width:46px;
-  height:46px;
-  border-radius:12px;
-  background:#eef5ff;
+  width:48px;
+  height:48px;
+  border-radius:13px;
+  background:#edf4ff;
   display:grid;
   place-items:center;
   font-size:21px;
-  margin-bottom:16px;
+  margin-bottom:17px;
 }
 
 .card h3{
   color:var(--navy);
-  margin-bottom:7px;
   font-size:18px;
+  margin-bottom:7px;
 }
 
 .card p{
@@ -287,33 +410,211 @@ section{
 }
 
 /* DESTINATIONS */
+
 .destinations{
-  background:#f7f9fc;
+  background:var(--light);
 }
 
 .dest-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:14px;
+  gap:15px;
 }
 
 .dest{
-  padding:22px;
   background:#fff;
   border:1px solid var(--border);
-  border-radius:15px;
-  font-weight:800;
+  border-radius:17px;
+  padding:23px;
+  transition:.2s;
+}
+
+.dest:hover{
+  transform:translateY(-3px);
+  border-color:#a9c6ff;
+}
+
+.flag{
+  font-size:25px;
+  margin-bottom:9px;
+}
+
+.dest strong{
+  display:block;
   color:var(--navy);
+  font-size:17px;
 }
 
 .dest small{
-  display:block;
   color:var(--muted);
-  font-weight:500;
-  margin-top:4px;
+  font-size:12px;
+}
+
+/* UNIVERSITIES */
+
+.universities{
+  background:#fff;
+}
+
+.uni-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.uni{
+  position:relative;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:25px;
+  background:#fff;
+  overflow:hidden;
+  transition:.2s;
+}
+
+.uni:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+}
+
+.uni:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:4px;
+  background:var(--blue);
+}
+
+.uni-country{
+  display:inline-block;
+  background:#edf4ff;
+  color:#1753b9;
+  border-radius:999px;
+  padding:5px 9px;
+  font-size:10px;
+  font-weight:900;
+  margin-bottom:13px;
+}
+
+.uni h3{
+  font-size:19px;
+  line-height:1.25;
+  color:var(--navy);
+  margin-bottom:7px;
+}
+
+.uni p{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.uni a{
+  display:inline-block;
+  margin-top:14px;
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+}
+
+.uni-more{
+  margin-top:30px;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* WHY */
+
+.why{
+  background:var(--light);
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.why-panel{
+  background:linear-gradient(145deg,var(--navy),var(--navy2));
+  color:#fff;
+  border-radius:24px;
+  padding:38px;
+  box-shadow:var(--shadow);
+}
+
+.why-panel h2{
+  font-size:38px;
+  line-height:1.15;
+  margin-bottom:14px;
+}
+
+.why-panel p{
+  color:#c8d6ec;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:13px;
+  margin-top:25px;
+}
+
+.stat{
+  padding:16px;
+  border-radius:12px;
+  background:rgba(255,255,255,.08);
+}
+
+.stat b{
+  display:block;
+  font-size:20px;
+}
+
+.stat span{
+  font-size:11px;
+  color:#c8d6ec;
+}
+
+.features{
+  display:grid;
+  gap:16px;
+}
+
+.feature{
+  display:flex;
+  gap:13px;
+  padding:17px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+}
+
+.feature-icon{
+  flex:0 0 42px;
+  height:42px;
+  border-radius:11px;
+  background:#edf4ff;
+  display:grid;
+  place-items:center;
+}
+
+.feature h3{
+  font-size:16px;
+  color:var(--navy);
+  margin-bottom:3px;
+}
+
+.feature p{
+  font-size:13px;
+  color:var(--muted);
 }
 
 /* PROCESS */
+
 .steps{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -321,29 +622,32 @@ section{
 }
 
 .step{
-  padding:24px;
-  border-radius:16px;
-  background:#f8faff;
-  border:1px solid #e2e9f6;
+  border:1px solid var(--border);
+  border-radius:17px;
+  padding:25px;
+  background:#fff;
 }
 
 .num{
   color:var(--blue);
   font-weight:900;
-  margin-bottom:15px;
+  font-size:12px;
+  margin-bottom:13px;
 }
 
 .step h3{
+  font-size:17px;
   color:var(--navy);
   margin-bottom:6px;
 }
 
 .step p{
-  color:var(--muted);
   font-size:13px;
+  color:var(--muted);
 }
 
 /* ABOUT */
+
 .about{
   background:var(--navy);
   color:#fff;
@@ -357,40 +661,79 @@ section{
 }
 
 .about h2{
-  font-size:38px;
-  margin-bottom:17px;
+  font-size:40px;
+  line-height:1.12;
+  margin-bottom:15px;
 }
 
 .about p{
-  color:#c4d0e8;
-  margin-bottom:18px;
+  color:#c8d5e9;
+  margin-bottom:15px;
+}
+
+.checks{
+  display:grid;
+  gap:11px;
 }
 
 .check{
-  margin:12px 0;
-  color:#e8efff;
+  padding:13px 15px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:11px;
+  background:rgba(255,255,255,.04);
+  color:#e9eff9;
+}
+
+/* SOCIAL */
+
+.social{
+  padding:55px 0;
+}
+
+.social-box{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  padding:35px;
+  border:1px solid #dce7f8;
+  border-radius:22px;
+  background:linear-gradient(135deg,#edf5ff,#fbfdff);
+}
+
+.social-box h2{
+  color:var(--navy);
+  font-size:28px;
+}
+
+.social-box p{
+  font-size:14px;
+  color:var(--muted);
+  margin-top:4px;
 }
 
 /* CONTACT */
+
 .contact{
-  background:#f7f9fc;
+  background:var(--light);
 }
 
 .contact-grid{
   display:grid;
   grid-template-columns:.85fr 1.15fr;
-  gap:28px;
+  gap:25px;
 }
 
 .contact-card,
 .form{
   background:#fff;
   border:1px solid var(--border);
-  border-radius:18px;
+  border-radius:19px;
   padding:30px;
 }
 
 .contact-card h3{
+  font-size:23px;
   color:var(--navy);
   margin-bottom:20px;
 }
@@ -401,18 +744,22 @@ section{
 
 .contact-item b{
   display:block;
+  font-size:13px;
   color:var(--navy);
-  font-size:14px;
 }
 
 .contact-item span{
-  color:var(--muted);
   font-size:14px;
+  color:var(--muted);
+}
+
+.contact-item a:hover{
+  color:var(--blue);
 }
 
 form{
   display:grid;
-  gap:14px;
+  gap:13px;
 }
 
 input,
@@ -420,15 +767,10 @@ select,
 textarea{
   width:100%;
   padding:14px;
-  border:1px solid #d6deeb;
+  border:1px solid #d5ddea;
   border-radius:10px;
-  font:inherit;
   outline:none;
-}
-
-textarea{
-  min-height:120px;
-  resize:vertical;
+  background:#fff;
 }
 
 input:focus,
@@ -437,18 +779,32 @@ textarea:focus{
   border-color:var(--blue);
 }
 
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
 .consent{
   display:flex;
   gap:9px;
   font-size:12px;
   color:var(--muted);
+  align-items:flex-start;
 }
 
 .consent input{
   width:auto;
+  margin-top:4px;
+}
+
+.form-note{
+  font-size:11px;
+  color:#7a879b;
+  margin-top:-5px;
 }
 
 /* LEGAL */
+
 .legal-section{
   display:none;
   background:#fff;
@@ -466,20 +822,19 @@ textarea:focus{
   padding:30px;
 }
 
-.legal-card h2{
+.legal-card h2,
+.legal-card h3{
   color:var(--navy);
-  margin-bottom:15px;
 }
 
 .legal-card h3{
-  color:var(--navy);
-  margin:25px 0 8px;
+  margin:23px 0 7px;
 }
 
 .legal-card p,
 .legal-card li{
-  color:var(--muted);
   font-size:14px;
+  color:var(--muted);
   line-height:1.75;
 }
 
@@ -488,8 +843,8 @@ textarea:focus{
 }
 
 .legal-close{
-  margin-top:20px;
-  padding:9px 15px;
+  margin-top:18px;
+  padding:9px 14px;
   border:1px solid var(--border);
   border-radius:8px;
   background:#fff;
@@ -497,22 +852,25 @@ textarea:focus{
 }
 
 /* WHATSAPP */
+
 .whatsapp{
   position:fixed;
   right:20px;
   bottom:20px;
-  background:#159447;
+  z-index:200;
+  background:#168b45;
   color:#fff;
   padding:14px 18px;
   border-radius:999px;
-  font-weight:800;
-  z-index:200;
+  font-weight:900;
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
 }
 
 /* FOOTER */
+
 footer{
-  background:#07122c;
-  color:#aebbd3;
+  background:#041027;
+  color:#aebbd2;
   padding:35px 0;
 }
 
@@ -521,6 +879,7 @@ footer{
   justify-content:space-between;
   gap:20px;
   flex-wrap:wrap;
+  align-items:center;
 }
 
 .footer-logo{
@@ -528,13 +887,27 @@ footer{
   font-weight:900;
 }
 
+.footer-links{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  font-size:12px;
+}
+
+.footer-links a:hover{
+  color:#fff;
+}
+
 .copyright{
   font-size:12px;
   margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.08);
 }
 
 /* MOBILE */
-@media(max-width:850px){
+
+@media(max-width:900px){
 
   nav{
     display:none;
@@ -545,6 +918,7 @@ footer{
   }
 
   .hero-grid,
+  .why-grid,
   .about-grid,
   .contact-grid{
     grid-template-columns:1fr;
@@ -558,12 +932,16 @@ footer{
     grid-template-columns:repeat(2,1fr);
   }
 
+  .uni-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
   .steps{
     grid-template-columns:repeat(2,1fr);
   }
 }
 
-@media(max-width:560px){
+@media(max-width:600px){
 
   .topbar .container{
     justify-content:center;
@@ -574,64 +952,149 @@ footer{
   }
 
   .logo{
-    font-size:18px;
+    font-size:19px;
   }
 
-  h1{
-    font-size:42px;
-  }
-
-  .cards,
-  .dest-grid,
-  .steps{
-    grid-template-columns:1fr;
+  .logo em{
+    font-size:7px;
   }
 
   section{
-    padding:55px 0;
+    padding:58px 0;
   }
 
   .hero{
     padding:55px 0;
   }
 
-  .globe{
-    height:250px;
+  h1{
+    font-size:43px;
+    letter-spacing:-1.5px;
+  }
+
+  .hero-copy{
+    font-size:16px;
+  }
+
+  .world{
+    height:275px;
+  }
+
+  .cards,
+  .dest-grid,
+  .uni-grid,
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .social-box{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .about h2,
+  .why-panel h2{
+    font-size:31px;
+  }
+
+  .whatsapp{
+    right:12px;
+    bottom:12px;
+    padding:12px 15px;
   }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+
 <div class="topbar">
+
   <div class="container">
-    <span>🌍 Global Education Guidance</span>
-    <span>Hyderabad • Telangana • India</span>
+
+    <span>
+      🌍 International Education & Study Abroad Consultancy
+    </span>
+
+    <span>
+      Hyderabad, Telangana, India •
+      <a href="tel:+917032618495">
+        +91 70326 18495
+      </a>
+    </span>
+
   </div>
+
 </div>
 
+
+<!-- HEADER -->
+
 <header>
+
   <div class="container nav">
 
     <a class="logo" href="#home">
-      AVYRION <span>Global Solutions</span>
+
+      AVYRION
+      <span>Global Solutions</span>
+
+      <em>
+        INTERNATIONAL EDUCATION
+      </em>
+
     </a>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+
+    <nav id="mainNav">
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#destinations">
+        Destinations
+      </a>
+
+      <a href="#universities">
+        Universities
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#contact" class="nav-cta">
+        Free Counselling
+      </a>
+
     </nav>
 
-    <button class="menu" onclick="toggleNav()" aria-label="Open menu">☰</button>
+
+    <button
+      class="menu"
+      onclick="toggleNav()"
+      aria-label="Open navigation"
+    >
+      ☰
+    </button>
 
   </div>
+
 </header>
 
+
 <main>
+
+
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -639,48 +1102,101 @@ footer{
 
     <div>
 
-      <span class="eyebrow">
-        STUDY ABROAD • ADMISSIONS • GUIDANCE
+      <span class="badge">
+        🎓 STUDY ABROAD • ADMISSIONS • VISA GUIDANCE
       </span>
 
+
       <h1>
-        AVYRION Global Solutions
-        <span>Study Abroad Consultancy in Hyderabad</span>
+
+        Turn Your
+        <span class="blue">
+          Global Dreams
+        </span>
+
+        Into Your
+
+        <span class="gold">
+          Future.
+        </span>
+
       </h1>
 
-      <p>
-        AVYRION Global Solutions provides personalised study abroad guidance
-        for students planning to pursue higher education internationally.
+
+      <p class="hero-copy">
+
+        AVYRION Global Solutions helps students explore international
+        education opportunities, connect with universities and colleges
+        worldwide, and navigate their journey from course selection
+        to pre-departure.
+
       </p>
 
+
       <div class="actions">
-        <a class="btn btn-primary" href="#contact">
+
+        <a
+          class="btn btn-primary"
+          href="#contact"
+        >
           Get Free Counselling
         </a>
 
-        <a class="btn btn-outline" href="#destinations">
-          Explore Destinations
+
+        <a
+          class="btn btn-light"
+          href="#universities"
+        >
+          Explore Universities
         </a>
+
       </div>
 
-      <div class="trust">
-        <span>✓ Course guidance</span>
-        <span>✓ Application support</span>
-        <span>✓ Visa guidance</span>
+
+      <div class="quick">
+
+        <span>
+          ✓ University Admissions
+        </span>
+
+        <span>
+          ✓ Visa Guidance
+        </span>
+
+        <span>
+          ✓ Loan Assistance
+        </span>
+
       </div>
 
     </div>
 
+
     <div class="hero-card">
 
-      <div class="globe">
+      <div class="world">
 
-        <div class="globe-circle"></div>
+        <div class="globe"></div>
 
-        <span class="dest-mini d1">🇬🇧 UK</span>
-        <span class="dest-mini d2">🇨🇦 Canada</span>
-        <span class="dest-mini d3">🇺🇸 USA</span>
-        <span class="dest-mini d4">🇦🇺 Australia</span>
+        <span class="country c1">
+          🇬🇧 UK
+        </span>
+
+        <span class="country c2">
+          🇨🇦 Canada
+        </span>
+
+        <span class="country c3">
+          🇺🇸 USA
+        </span>
+
+        <span class="country c4">
+          🇦🇺 Australia
+        </span>
+
+        <span class="hero-label">
+          Your journey. Your destination. Your future.
+        </span>
 
       </div>
 
@@ -690,6 +1206,8 @@ footer{
 
 </section>
 
+
+<!-- SERVICES -->
 
 <section id="services">
 
@@ -697,68 +1215,130 @@ footer{
 
     <div class="section-head">
 
+      <div class="kicker">
+        WHAT WE DO
+      </div>
+
       <h2>
-        Study Abroad Guidance & International Education Consultancy
+        Complete Study Abroad Support
       </h2>
 
       <p>
-        We assist students throughout their international education journey
-        with practical and personalised guidance.
+        Personalised guidance designed to make your international
+        education journey clearer and more structured.
       </p>
 
     </div>
 
+
     <div class="cards">
 
-      <div class="card">
-        <div class="icon">🎓</div>
-        <h3>Course & University Selection</h3>
-        <p>
-          Explore suitable courses and universities based on your academic
-          profile, goals and preferred destination.
-        </p>
-      </div>
 
       <div class="card">
-        <div class="icon">📝</div>
-        <h3>Application Assistance</h3>
+
+        <div class="icon">
+          🎓
+        </div>
+
+        <h3>
+          University Admissions
+        </h3>
+
         <p>
-          Guidance with applications, documentation and the admissions process.
+          Guidance on choosing institutions, preparing applications
+          and understanding admission requirements.
         </p>
+
       </div>
 
-      <div class="card">
-        <div class="icon">💰</div>
-        <h3>Education Loan Guidance</h3>
-        <p>
-          Understand education finance options and prepare the information
-          required by lenders.
-        </p>
-      </div>
 
       <div class="card">
-        <div class="icon">📄</div>
-        <h3>Admission Guidance</h3>
+
+        <div class="icon">
+          🧭
+        </div>
+
+        <h3>
+          Course & University Selection
+        </h3>
+
         <p>
-          Support in understanding admission requirements, offers and next steps.
+          Explore options based on your academic profile, career goals,
+          budget and preferred destination.
         </p>
+
       </div>
 
-      <div class="card">
-        <div class="icon">✈️</div>
-        <h3>Student Visa Assistance</h3>
-        <p>
-          Practical guidance on visa documentation and the application process.
-        </p>
-      </div>
 
       <div class="card">
-        <div class="icon">🏠</div>
-        <h3>Pre-departure Guidance</h3>
+
+        <div class="icon">
+          🛂
+        </div>
+
+        <h3>
+          Student Visa Guidance
+        </h3>
+
         <p>
-          Helpful guidance for travel, accommodation and preparing for your
-          international study experience.
+          Step-by-step support with documentation and preparation
+          for the student visa process.
         </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          💰
+        </div>
+
+        <h3>
+          Financial & Loan Assistance
+        </h3>
+
+        <p>
+          Guidance on education loan requirements and financial
+          planning for overseas education.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          📑
+        </div>
+
+        <h3>
+          Documentation Support
+        </h3>
+
+        <p>
+          Organise important application documents and keep your
+          admissions process structured.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          ✈️
+        </div>
+
+        <h3>
+          Accommodation & Pre-departure
+        </h3>
+
+        <p>
+          Practical guidance for accommodation, travel preparation
+          and your new student life abroad.
+        </p>
+
       </div>
 
     </div>
@@ -768,56 +1348,152 @@ footer{
 </section>
 
 
-<section class="destinations" id="destinations">
+<!-- DESTINATIONS -->
+
+<section
+  class="destinations"
+  id="destinations"
+>
 
   <div class="container">
 
     <div class="section-head">
 
-      <h2>Study Destinations</h2>
+      <div class="kicker">
+        STUDY DESTINATIONS
+      </div>
+
+      <h2>
+        Choose Your Global Destination
+      </h2>
 
       <p>
-        Explore international education opportunities across popular study
-        destinations.
+        Explore international education opportunities across popular
+        study destinations.
       </p>
 
     </div>
 
+
     <div class="dest-grid">
 
-      <a class="dest" href="#contact">
-        🇬🇧 Study in UK
-        <small>Universities • Bachelor's • Master's</small>
-      </a>
 
       <a class="dest" href="#contact">
-        🇨🇦 Study in Canada
-        <small>Colleges • Universities • PG pathways</small>
+
+        <div class="flag">
+          🇬🇧
+        </div>
+
+        <strong>
+          Study in UK
+        </strong>
+
+        <small>
+          Universities • Bachelor's • Master's
+        </small>
+
       </a>
 
-      <a class="dest" href="#contact">
-        🇺🇸 Study in USA
-        <small>Universities • STEM • Graduate study</small>
-      </a>
 
       <a class="dest" href="#contact">
-        🇦🇺 Study in Australia
-        <small>Universities • Higher education</small>
+
+        <div class="flag">
+          🇨🇦
+        </div>
+
+        <strong>
+          Study in Canada
+        </strong>
+
+        <small>
+          Colleges • Universities • Graduate study
+        </small>
+
       </a>
 
-      <a class="dest" href="#contact">
-        🇦🇪 Study in UAE
-        <small>International education close to home</small>
-      </a>
 
       <a class="dest" href="#contact">
-        🇲🇹 Study in Malta
-        <small>European study opportunities</small>
+
+        <div class="flag">
+          🇺🇸
+        </div>
+
+        <strong>
+          Study in USA
+        </strong>
+
+        <small>
+          Universities • STEM • Graduate programmes
+        </small>
+
       </a>
 
+
       <a class="dest" href="#contact">
-        🇪🇸 Study in Spain
-        <small>European education options</small>
+
+        <div class="flag">
+          🇦🇺
+        </div>
+
+        <strong>
+          Study in Australia
+        </strong>
+
+        <small>
+          Universities • Higher education
+        </small>
+
+      </a>
+
+
+      <a class="dest" href="#contact">
+
+        <div class="flag">
+          🇦🇪
+        </div>
+
+        <strong>
+          Study in UAE
+        </strong>
+
+        <small>
+          International education close to home
+        </small>
+
+      </a>
+
+
+      <a class="dest" href="#contact">
+
+        <div class="flag">
+          🇲🇹
+        </div>
+
+        <strong>
+          Study in Malta
+        </strong>
+
+        <small>
+          European education options
+        </small>
+
+      </a>
+
+
+      <a class="dest" href="#contact">
+
+        <div class="flag">
+          🇪🇸
+        </div>
+
+        <strong>
+          Study in Spain
+        </strong>
+
+        <small>
+          European education options
+        </small>
+
       </a>
 
     </div>
@@ -826,6 +1502,336 @@ footer{
 
 </section>
 
+
+<!-- UNIVERSITIES -->
+
+<section
+  class="universities"
+  id="universities"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        UNIVERSITIES & COLLEGES
+      </div>
+
+      <h2>
+        Explore Leading Study Options
+      </h2>
+
+      <p>
+        Discover institutions and programmes that may match your
+        academic profile and career goals. Ask our counsellors about
+        current courses and intakes.
+      </p>
+
+    </div>
+
+
+    <div class="uni-grid">
+
+
+      <div class="uni">
+
+        <span class="uni-country">
+          🇺🇸 USA
+        </span>
+
+        <h3>
+          Arizona State University
+        </h3>
+
+        <p>
+          Explore undergraduate and postgraduate study options
+          in the United States.
+        </p>
+
+        <a href="#contact">
+          Enquire about courses →
+        </a>
+
+      </div>
+
+
+      <div class="uni">
+
+        <span class="uni-country">
+          🇨🇦 CANADA
+        </span>
+
+        <h3>
+          University of British Columbia
+        </h3>
+
+        <p>
+          Explore undergraduate and postgraduate study opportunities
+          in Canada.
+        </p>
+
+        <a href="#contact">
+          Enquire about courses →
+        </a>
+
+      </div>
+
+
+      <div class="uni">
+
+        <span class="uni-country">
+          🇬🇧 UK
+        </span>
+
+        <h3>
+          University of Manchester
+        </h3>
+
+        <p>
+          Explore study options and current entry requirements
+          in the UK.
+        </p>
+
+        <a href="#contact">
+          Enquire about courses →
+        </a>
+
+      </div>
+
+
+      <div class="uni">
+
+        <span class="uni-country">
+          🇬🇧 UK
+        </span>
+
+        <h3>
+          University of Birmingham
+        </h3>
+
+        <p>
+          Explore programmes and international student opportunities.
+        </p>
+
+        <a href="#contact">
+          Enquire about courses →
+        </a>
+
+      </div>
+
+
+      <div class="uni">
+
+        <span class="uni-country">
+          🇬🇧 UK
+        </span>
+
+        <h3>
+          University of Leeds
+        </h3>
+
+        <p>
+          Explore courses and admissions options for international students.
+        </p>
+
+        <a href="#contact">
+          Enquire about courses →
+        </a>
+
+      </div>
+
+
+      <div class="uni">
+
+        <span class="uni-country">
+          🇦🇺 AUSTRALIA
+        </span>
+
+        <h3>
+          Monash University
+        </h3>
+
+        <p>
+          Explore international study options and current programme
+          requirements.
+        </p>
+
+        <a href="#contact">
+          Enquire about courses →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="uni-more">
+
+      More universities and institutions can be discussed based on
+      your course, profile and preferred destination.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY AVYRION -->
+
+<section
+  class="why"
+  id="why"
+>
+
+  <div class="container why-grid">
+
+
+    <div class="why-panel">
+
+      <div
+        class="kicker"
+        style="color:#8fb8ff"
+      >
+        WHY AVYRION
+      </div>
+
+      <h2>
+        More clarity. Better decisions. A smoother journey.
+      </h2>
+
+      <p>
+        We focus on practical, personalised guidance so students
+        can make informed decisions about international education.
+      </p>
+
+
+      <div class="stats">
+
+        <div class="stat">
+          <b>7+</b>
+          <span>Study destinations</span>
+        </div>
+
+        <div class="stat">
+          <b>360°</b>
+          <span>Journey support</span>
+        </div>
+
+        <div class="stat">
+          <b>1:1</b>
+          <span>Personalised guidance</span>
+        </div>
+
+        <div class="stat">
+          <b>Global</b>
+          <span>Education options</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="features">
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          🎯
+        </div>
+
+        <div>
+
+          <h3>
+            Personalised Counselling
+          </h3>
+
+          <p>
+            Understand options aligned with your education,
+            goals and destination preferences.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          🏫
+        </div>
+
+        <div>
+
+          <h3>
+            University Guidance
+          </h3>
+
+          <p>
+            Explore institutions, courses, admissions and
+            current requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          📋
+        </div>
+
+        <div>
+
+          <h3>
+            End-to-End Support
+          </h3>
+
+          <p>
+            Guidance across applications, documentation,
+            finance, visa preparation and departure.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          🤝
+        </div>
+
+        <div>
+
+          <h3>
+            Student-First Approach
+          </h3>
+
+          <p>
+            Clear communication and practical support
+            throughout your journey.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROCESS -->
 
 <section id="process">
 
@@ -833,47 +1839,93 @@ footer{
 
     <div class="section-head">
 
-      <h2>A Simple, Student-First Process</h2>
+      <div class="kicker">
+        OUR PROCESS
+      </div>
+
+      <h2>
+        From Dream to Departure
+      </h2>
 
       <p>
-        We keep your journey structured from the first conversation to your
-        departure.
+        A simple four-step journey to help you move forward
+        with confidence.
       </p>
 
     </div>
+
 
     <div class="steps">
 
+
       <div class="step">
-        <div class="num">01</div>
-        <h3>Profile Assessment</h3>
+
+        <div class="num">
+          01
+        </div>
+
+        <h3>
+          Profile Assessment
+        </h3>
+
         <p>
           Discuss your education, goals, budget and preferred destination.
         </p>
+
       </div>
 
-      <div class="step">
-        <div class="num">02</div>
-        <h3>Course & University</h3>
-        <p>
-          Shortlist suitable study options and understand entry requirements.
-        </p>
-      </div>
 
       <div class="step">
-        <div class="num">03</div>
-        <h3>Application & Visa</h3>
+
+        <div class="num">
+          02
+        </div>
+
+        <h3>
+          Course & University
+        </h3>
+
         <p>
-          Work through admissions, documentation, finance and visa preparation.
+          Shortlist suitable courses and institutions and understand
+          entry requirements.
         </p>
+
       </div>
 
+
       <div class="step">
-        <div class="num">04</div>
-        <h3>Pre-departure</h3>
+
+        <div class="num">
+          03
+        </div>
+
+        <h3>
+          Application & Visa
+        </h3>
+
         <p>
-          Prepare for travel, accommodation and studying abroad.
+          Work through applications, documents, finance and
+          visa preparation.
         </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="num">
+          04
+        </div>
+
+        <h3>
+          Pre-departure
+        </h3>
+
+        <p>
+          Prepare for accommodation, travel and your new
+          international student life.
+        </p>
+
       </div>
 
     </div>
@@ -883,37 +1935,68 @@ footer{
 </section>
 
 
-<section class="about" id="about">
+<!-- ABOUT -->
+
+<section
+  class="about"
+  id="about"
+>
 
   <div class="container about-grid">
 
+
     <div>
 
-      <span class="eyebrow">ABOUT AVYRION</span>
+      <div
+        class="kicker"
+        style="color:#8fb8ff"
+      >
+        ABOUT AVYRION
+      </div>
 
-      <h2>Guidance Built Around Your Goals</h2>
+      <h2>
+        Your ambition. Our guidance. A world of possibilities.
+      </h2>
 
       <p>
-        AVYRION Global Solutions is a study abroad consultancy in Hyderabad
-        focused on helping students understand international education options
-        and navigate the study abroad process with greater clarity.
+        AVYRION Global Solutions is an international education
+        and study abroad consultancy based in Hyderabad.
       </p>
 
       <p>
-        We aim to provide practical, personalised guidance while keeping
-        students informed about requirements, timelines and next steps.
+        We help students explore global universities and colleges
+        while providing support across admissions, visa preparation,
+        financial planning and pre-departure.
       </p>
 
     </div>
 
-    <div>
 
-      <div class="check">✓ Personalised counselling</div>
-      <div class="check">✓ Destination and course guidance</div>
-      <div class="check">✓ University application support</div>
-      <div class="check">✓ Education loan guidance</div>
-      <div class="check">✓ Student visa assistance</div>
-      <div class="check">✓ Pre-departure guidance</div>
+    <div class="checks">
+
+      <div class="check">
+        ✓ International university & college guidance
+      </div>
+
+      <div class="check">
+        ✓ Admissions and application support
+      </div>
+
+      <div class="check">
+        ✓ Student visa guidance
+      </div>
+
+      <div class="check">
+        ✓ Education loan & financial guidance
+      </div>
+
+      <div class="check">
+        ✓ Documentation & accommodation support
+      </div>
+
+      <div class="check">
+        ✓ Pre-departure assistance
+      </div>
 
     </div>
 
@@ -922,59 +2005,159 @@ footer{
 </section>
 
 
-<section class="contact" id="contact">
+<!-- INSTAGRAM -->
+
+<section class="social">
+
+  <div class="container">
+
+    <div class="social-box">
+
+      <div>
+
+        <div class="kicker">
+          FOLLOW AVYRION
+        </div>
+
+        <h2>
+          Stay connected with AVYRION Global Solutions
+        </h2>
+
+        <p>
+          Follow our latest study abroad updates and education
+          guidance on Instagram.
+        </p>
+
+      </div>
+
+
+      <a
+        class="btn btn-primary"
+        href="https://www.instagram.com/avyrionglobal/"
+        target="_blank"
+        rel="noopener"
+      >
+        📸 Visit Instagram
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section
+  class="contact"
+  id="contact"
+>
 
   <div class="container">
 
     <div class="section-head">
 
-      <h2>Let’s Plan Your Study Abroad Journey</h2>
+      <div class="kicker">
+        START YOUR JOURNEY
+      </div>
+
+      <h2>
+        Let’s Plan Your Study Abroad Journey
+      </h2>
 
       <p>
-        Send us your details and our team can help you understand your next steps.
+        Tell us about your plans and our team can help you
+        understand your next steps.
       </p>
 
     </div>
 
+
     <div class="contact-grid">
+
 
       <div class="contact-card">
 
-        <h3>AVYRION Global Solutions</h3>
+        <h3>
+          AVYRION Global Solutions
+        </h3>
+
 
         <div class="contact-item">
-          <b>📞 Call Us</b>
+
+          <b>
+            📞 Call / WhatsApp
+          </b>
+
           <span>
-            <a href="tel:+917032618495">+91 70326 18495</a>
+
+            <a href="tel:+917032618495">
+              +91 70326 18495
+            </a>
+
           </span>
+
         </div>
 
+
         <div class="contact-item">
-          <b>📍 Location</b>
+
+          <b>
+            📍 Location
+          </b>
+
           <span>
             Hyderabad, Telangana, India
           </span>
+
         </div>
 
-        <div class="contact-item">
-          <b>✉️ Email</b>
-          <span>
-            avyrionglobalsolutions@gmail.com
-          </span>
-        </div>
 
         <div class="contact-item">
-          <b>🌎 Study Destinations</b>
+
+          <b>
+            🌎 Destinations
+          </b>
+
           <span>
             UK • Canada • USA • Australia • UAE • Malta • Spain
           </span>
+
         </div>
 
+
         <div class="contact-item">
-          <b>💬 WhatsApp</b>
+
+          <b>
+            📸 Instagram
+          </b>
+
           <span>
-            +91 70326 18495
+
+            <a
+              href="https://www.instagram.com/avyrionglobal/"
+              target="_blank"
+              rel="noopener"
+            >
+              @avyrionglobal
+            </a>
+
           </span>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <b>
+            ✉️ Email
+          </b>
+
+          <span>
+            avyrionglobalsolutions@gmail.com
+          </span>
+
         </div>
 
       </div>
@@ -988,11 +2171,13 @@ footer{
           method="POST"
         >
 
+
           <input
             name="name"
             required
-            placeholder="Your full name"
+            placeholder="Full name"
           >
+
 
           <input
             name="email"
@@ -1001,38 +2186,78 @@ footer{
             placeholder="Email address"
           >
 
+
           <input
             name="phone"
             required
             placeholder="Phone / WhatsApp number"
           >
 
-          <select name="destination" required>
+
+          <select
+            name="destination"
+            required
+          >
 
             <option value="">
-              Preferred destination
+              Preferred study destination
             </option>
 
-            <option>UK</option>
-            <option>Canada</option>
-            <option>USA</option>
-            <option>Australia</option>
-            <option>UAE</option>
-            <option>Malta</option>
-            <option>Spain</option>
+            <option>
+              UK
+            </option>
+
+            <option>
+              Canada
+            </option>
+
+            <option>
+              USA
+            </option>
+
+            <option>
+              Australia
+            </option>
+
+            <option>
+              UAE
+            </option>
+
+            <option>
+              Malta
+            </option>
+
+            <option>
+              Spain
+            </option>
 
           </select>
 
+
+          <input
+            name="course"
+            placeholder="Course / programme interested in"
+          >
+
+
+          <input
+            name="intake"
+            placeholder="Target intake (e.g. Jan 2027 / Sep 2027)"
+          >
+
+
           <textarea
             name="message"
-            placeholder="Tell us about your course, intake or questions"
+            placeholder="Tell us about your education, course or questions"
           ></textarea>
+
 
           <input
             type="hidden"
             name="_subject"
             value="New Student Enquiry - AVYRION Global Solutions"
           >
+
 
           <div class="consent">
 
@@ -1043,13 +2268,30 @@ footer{
             >
 
             <label for="consent">
+
               I agree to the
-              <a href="#privacy">Privacy Policy</a>
+              <a href="#privacy">
+                Privacy Policy
+              </a>
+
               and
-              <a href="#terms">Terms & Conditions</a>.
+
+              <a href="#terms">
+                Terms & Conditions
+              </a>.
+
             </label>
 
           </div>
+
+
+          <div class="form-note">
+
+            Your details will be used to respond to your
+            study abroad enquiry.
+
+          </div>
+
 
           <button
             class="btn btn-primary"
@@ -1069,49 +2311,93 @@ footer{
 </section>
 
 
-<section class="legal-section" id="privacy">
+<!-- PRIVACY -->
+
+<section
+  class="legal-section"
+  id="privacy"
+>
 
   <div class="container">
 
     <div class="legal-card">
 
-      <h2>Privacy Policy</h2>
+      <h2>
+        Privacy Policy
+      </h2>
 
       <p>
-        AVYRION Global Solutions respects your privacy and is committed to
-        protecting the information you provide through this website.
+        AVYRION Global Solutions respects your privacy and is committed
+        to protecting the information you provide through this website.
       </p>
 
-      <h3>Information We May Collect</h3>
+
+      <h3>
+        Information We May Collect
+      </h3>
 
       <ul>
-        <li>Full name</li>
-        <li>Phone number</li>
-        <li>Email address</li>
-        <li>Preferred study destination</li>
-        <li>Course or programme preferences</li>
-        <li>Educational information</li>
-        <li>Information submitted through enquiries</li>
+
+        <li>
+          Full name
+        </li>
+
+        <li>
+          Phone number
+        </li>
+
+        <li>
+          Email address
+        </li>
+
+        <li>
+          Preferred study destination
+        </li>
+
+        <li>
+          Course or programme preferences
+        </li>
+
+        <li>
+          Target intake and educational information
+        </li>
+
+        <li>
+          Information submitted through enquiries
+        </li>
+
       </ul>
 
-      <h3>How We Use Your Information</h3>
+
+      <h3>
+        How We Use Your Information
+      </h3>
 
       <p>
-        Information submitted through this website may be used to respond to
-        enquiries, provide study abroad guidance, discuss courses and
+        Information submitted through this website may be used to respond
+        to enquiries, provide study abroad guidance, discuss courses and
         destinations, and assist with application-related queries.
       </p>
 
-      <h3>Contact</h3>
+
+      <h3>
+        Contact
+      </h3>
 
       <p>
+
         AVYRION Global Solutions<br>
         Hyderabad, Telangana, India<br>
         Phone: +91 70326 18495<br>
         Email: avyrionglobalsolutions@gmail.com
+
       </p>
 
-      <button class="legal-close" onclick="closeLegal('privacy')">
+
+      <button
+        class="legal-close"
+        onclick="closeLegal('privacy')"
+      >
         Close Privacy Policy
       </button>
 
@@ -1122,36 +2408,53 @@ footer{
 </section>
 
 
-<section class="legal-section" id="terms">
+<!-- TERMS -->
+
+<section
+  class="legal-section"
+  id="terms"
+>
 
   <div class="container">
 
     <div class="legal-card">
 
-      <h2>Terms & Conditions</h2>
+      <h2>
+        Terms & Conditions
+      </h2>
 
       <p>
-        Welcome to the website of AVYRION Global Solutions. By using this
-        website, you agree to these Terms & Conditions.
+        Welcome to the website of AVYRION Global Solutions.
+        By using this website, you agree to these Terms & Conditions.
       </p>
 
-      <h3>Website Information</h3>
+
+      <h3>
+        Website Information
+      </h3>
 
       <p>
-        Information on this website is provided for general educational and
-        study abroad guidance purposes. University requirements, tuition fees,
-        scholarships, admission requirements and visa requirements may change.
+        Information on this website is provided for general educational
+        and study abroad guidance purposes. University requirements,
+        tuition fees, scholarships, admission requirements and visa
+        requirements may change.
       </p>
 
-      <h3>Admissions</h3>
+
+      <h3>
+        Admissions
+      </h3>
 
       <p>
-        Final admission decisions are made by the relevant university or
-        educational institution. Guidance from AVYRION Global Solutions does
-        not guarantee admission.
+        Final admission decisions are made by the relevant university
+        or educational institution. Guidance from AVYRION Global Solutions
+        does not guarantee admission.
       </p>
 
-      <h3>Visa Guidance</h3>
+
+      <h3>
+        Visa Guidance
+      </h3>
 
       <p>
         Visa and immigration information is provided for general guidance.
@@ -1159,16 +2462,25 @@ footer{
         authority. We do not guarantee visa approval.
       </p>
 
-      <h3>Contact</h3>
+
+      <h3>
+        Contact
+      </h3>
 
       <p>
+
         AVYRION Global Solutions<br>
         Hyderabad, Telangana, India<br>
         Phone: +91 70326 18495<br>
         Email: avyrionglobalsolutions@gmail.com
+
       </p>
 
-      <button class="legal-close" onclick="closeLegal('terms')">
+
+      <button
+        class="legal-close"
+        onclick="closeLegal('terms')"
+      >
         Close Terms & Conditions
       </button>
 
@@ -1181,6 +2493,8 @@ footer{
 </main>
 
 
+<!-- WHATSAPP -->
+
 <a
   class="whatsapp"
   href="https://wa.me/917032618495?text=Hi%20AVYRION%20Global%20Solutions%2C%20I%20would%20like%20study%20abroad%20guidance."
@@ -1190,6 +2504,8 @@ footer{
   💬 WhatsApp Us
 </a>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -1202,29 +2518,43 @@ footer{
       </div>
 
       <div>
-        Study Abroad • Admissions • Student Guidance
+        International Education • Admissions • Student Guidance
       </div>
 
-      <div>
+      <div class="footer-links">
+
         <button
-          class="legal-close"
           onclick="openLegal('privacy')"
+          style="background:none;border:0;color:inherit;cursor:pointer"
         >
           Privacy Policy
         </button>
 
         <button
-          class="legal-close"
           onclick="openLegal('terms')"
+          style="background:none;border:0;color:inherit;cursor:pointer"
         >
           Terms & Conditions
         </button>
+
+        <a
+          href="https://www.instagram.com/avyrionglobal/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
       </div>
 
     </div>
 
+
     <div class="copyright">
-      © 2026 AVYRION Global Solutions. All rights reserved.
+
+      © 2026 AVYRION Global Solutions.
+      All rights reserved.
+
     </div>
 
   </div>
@@ -1236,51 +2566,68 @@ footer{
 
 function toggleNav(){
 
-  const nav = document.querySelector("nav");
+  const nav=document.getElementById("mainNav");
 
-  if(nav.style.display === "flex"){
+  if(nav.style.display==="flex"){
 
-    nav.style.display = "none";
+    nav.removeAttribute("style");
 
-  }else{
-
-    nav.style.display = "flex";
-    nav.style.position = "absolute";
-    nav.style.top = "90px";
-    nav.style.left = "0";
-    nav.style.right = "0";
-    nav.style.background = "#fff";
-    nav.style.padding = "20px";
-    nav.style.flexDirection = "column";
-    nav.style.borderBottom = "1px solid #e2e8f0";
+    return;
 
   }
 
+  nav.style.display="flex";
+  nav.style.position="absolute";
+  nav.style.top="82px";
+  nav.style.left="0";
+  nav.style.right="0";
+  nav.style.background="#fff";
+  nav.style.padding="20px";
+  nav.style.flexDirection="column";
+  nav.style.alignItems="stretch";
+  nav.style.borderBottom="1px solid #e3e8f1";
+
 }
+
+
+document
+  .querySelectorAll("#mainNav a")
+  .forEach(a=>{
+
+    a.addEventListener(
+      "click",
+      ()=>{
+        document
+          .getElementById("mainNav")
+          .removeAttribute("style");
+      }
+    );
+
+  });
 
 
 function openLegal(id){
 
   document
     .querySelectorAll(".legal-section")
-    .forEach(section => {
-      section.classList.remove("open");
-    });
+    .forEach(
+      s=>s.classList.remove("open")
+    );
 
-  const section = document.getElementById(id);
+  const section=document.getElementById(id);
 
   if(section){
 
     section.classList.add("open");
 
-    setTimeout(() => {
-
-      section.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
-      });
-
-    },50);
+    setTimeout(
+      ()=>{
+        section.scrollIntoView({
+          behavior:"smooth"
+        });
+      },
+      50
+    );
 
   }
 
@@ -1289,10 +2636,12 @@ function openLegal(id){
 
 function closeLegal(id){
 
-  const section = document.getElementById(id);
+  const section=document.getElementById(id);
 
   if(section){
+
     section.classList.remove("open");
+
   }
 
 }
@@ -1300,66 +2649,86 @@ function closeLegal(id){
 
 document
   .getElementById("enquiryForm")
-  .addEventListener("submit", async function(event){
+  .addEventListener(
+    "submit",
+    async function(event){
 
-    event.preventDefault();
+      event.preventDefault();
 
-    const form = this;
+      const form=this;
 
-    const consent = document.getElementById("consent");
+      const consent=
+        document.getElementById("consent");
 
-    if(!consent.checked){
 
-      alert(
-        "Please agree to the Privacy Policy and Terms & Conditions."
-      );
+      if(!consent.checked){
 
-      return;
+        alert(
+          "Please agree to the Privacy Policy and Terms & Conditions."
+        );
 
-    }
+        return;
 
-    const button = form.querySelector("button");
-
-    button.disabled = true;
-    button.textContent = "Sending...";
-
-    try{
-
-      const response = await fetch(
-        form.action,
-        {
-          method:"POST",
-          body:new FormData(form),
-          headers:{
-            "Accept":"application/json"
-          }
-        }
-      );
-
-      if(!response.ok){
-        throw new Error("Submission failed");
       }
 
-      form.reset();
 
-      alert(
-        "Thank you! Your enquiry has been submitted successfully. AVYRION Global Solutions will contact you shortly."
-      );
+      const button=
+        form.querySelector("button");
 
-    }catch(error){
 
-      alert(
-        "We could not send your enquiry right now. Please contact AVYRION Global Solutions on WhatsApp: +91 70326 18495."
-      );
+      button.disabled=true;
 
-    }finally{
+      button.textContent="Sending...";
 
-      button.disabled = false;
-      button.textContent = "Send Enquiry";
+
+      try{
+
+        const response=
+          await fetch(
+            form.action,
+            {
+              method:"POST",
+              body:new FormData(form),
+              headers:{
+                "Accept":"application/json"
+              }
+            }
+          );
+
+
+        if(!response.ok){
+
+          throw new Error(
+            "Submission failed"
+          );
+
+        }
+
+
+        form.reset();
+
+
+        alert(
+          "Thank you! Your enquiry has been submitted successfully. AVYRION Global Solutions will contact you shortly."
+        );
+
+
+      }catch(error){
+
+        alert(
+          "We could not send your enquiry right now. Please contact AVYRION Global Solutions on WhatsApp: +91 70326 18495."
+        );
+
+      }finally{
+
+        button.disabled=false;
+
+        button.textContent="Send Enquiry";
+
+      }
 
     }
-
-  });
+  );
 
 </script>
 
