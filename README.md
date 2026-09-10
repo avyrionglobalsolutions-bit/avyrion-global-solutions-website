@@ -1,8 +1,8 @@
-Avyrion Global Solutions Hyderabad
+AVYRION Global Solutions Hyderabad
 
 Study Abroad Guidance & International Education Consultancy Hyderabad
 
-Avyrion Global Solutions provides personalised study abroad guidance for students planning to pursue higher education internationally.
+AVYRION Global Solutions provides personalised study abroad guidance for students planning to pursue higher education internationally.
 
 We assist students with:
 
@@ -12,7 +12,6 @@ We assist students with:
 - Student loan guidance
 - Scholarship guidance
 - Student visa assistance
-- 
 - Pre-departure guidance
 
 Study Destinations
@@ -31,5 +30,5 @@ Our Goal
 
 Our goal is to simplify the study abroad journey by providing students with reliable information, personalised guidance and end-to-end support throughout their international education journey.
 
-Avyrion Global Solutions
+AVYRION Global Solutions
 Study Abroad Guidance | Admissions | Student Visa Assistance
